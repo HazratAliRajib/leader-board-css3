@@ -2,34 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* common styles */
 body{
+    font-family: popins, sans-serif;
+    margin: 0px;
     background-color: #F3F1FF;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
 }
 nav{
-    display: flex;
     background-color: #562EFF;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px 160px;
+    padding: 0px 140px;
 }
-nav img{
-    width: 40px;
-    height: 51px;
+nav > span{
+    display: flex;
 }
-nav #profile{
-    width: 51px;
-    height: 51px;
+nav > span > p >img{
+    width: 35px;
+    padding: 5px 20px;
 }
-nav a{
+.logo-text{
     color: white;
+    font-size: 30px;
+}
+nav > span > p > a{
     text-decoration: none;
-    padding-right: 15px;
-}
-nav p{
-    display: inline;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
+    margin-right: 15px;
 }
+.profile-image{
+    margin: 0;
+}
+
+/* header style end  */
+
 main{
     display: flex;
     flex-direction: column;
@@ -147,6 +153,7 @@ top blogs styles
     margin-bottom: 100px;
 }
 
+
 /* ------------------
     Media Quaries
 -------------------- */
@@ -175,3 +182,4 @@ top blogs styles
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
